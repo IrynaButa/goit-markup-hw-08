@@ -13,7 +13,13 @@
         <div class="container header-container">
         <nav class="main-nav"> 
         <a href="./index.html" class="logo-header link"> <span class="logo-text-web">Web</span>Studio</a>
-    <ul class="list nav-box">
+    <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-close" xlink:href="./images/spriteopt.svg#icon-close40px"></use>
+            <use class="icon-menu" xlink:href="./images/spriteopt.svg#icon-menu40px"></use>
+        </svg>
+    </button>
+        <ul class="list nav-box">
         <li class="item"> <a href="./index.html" class="link nav-link"> Студия </a> </li>
         <li class="item"> <a href="./portfolio.html" class="link nav-link current"> Портфолио</a>  </li>
         <li class="item"> <a href="#footer" class="link nav-link"> Контакты</a> </li>
@@ -21,17 +27,35 @@
 </nav>
     <ul class="list contacts-box"> 
         <li class="item"> <a href="mailto:info@devstudio.com" class="link contacts-link">
-                <svg class="contacts-icon" width="16" height="12">
+                <svg class="contacts-icon email">
                     <use xlink:href="./images/spriteopt.svg#icon-envelope"></use>
                 </svg>info@devstudio.com </a>
         </li>
         <li class="item"> <a href="tel:380961111111" class="link contacts-link">
-                <svg class="contacts-icon" width="10" height="16">
+                <svg class="contacts-icon tel">
                     <use xlink:href="./images/spriteopt.svg#icon-Vectorphone"></use>
                 </svg> +38 096 111 11 11</a></li>
     </ul>
     </div>
     </header>
+    <div class="mobile-container is-open" data-menu>
+        <ul class="list mobile-menu">
+            <li class="item"> <a href="./index.html" class="link mobile-link"> Студия </a> </li>
+            <li class="item"> <a href="./portfolio.html" class="link mobile-link current"> Портфолио</a> </li>
+            <li class="item"> <a href="#footer" class="link mobile-link"> Контакты</a> </li>
+        </ul>
+        <ul class="list mobile-contact">
+            <li class="item"> <a href="mailto:info@devstudio.com" class="link mobile-link contact">
+                    <svg class="contacts-icon email" >
+                        <use xlink:href="./images/spriteopt.svg#icon-envelope"></use>
+                    </svg>info@devstudio.com </a>
+            </li>
+            <li class="item"> <a href="tel:380961111111" class="link mobile-link contact">
+                    <svg class="contacts-icon tel">
+                        <use xlink:href="./images/spriteopt.svg#icon-Vectorphone"></use>
+                    </svg> +38 096 111 11 11</a></li>
+        </ul>
+    </div>
         <main>
         <!-- section filter -->
 <section class="our-projects">
@@ -49,7 +73,12 @@
         <li class="project-card">
             <a href="" class="link project-link">
             <div  class="card-overlay">
-                <img src="./images/imgtehno.jpg" alt="Технокряк">
+                <picture>
+                    <source srcset="./images/desktop/imgtehno.jpg 1x, ./images/desktop/imgtehno2x-min.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/tablet/imgtehno1x-min.jpg 1x, ./images/tablet/imgtehno2x-min.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/mobile/imgtehno1x-min.jpg 1x, ./images/mobile/imgtehno2x.jpg 2x" media="(min-width: 480px)" />
+                    <img src="./images/desktop/imgtehno.jpg" alt="Технокряк" height="294">
+                </picture>
             <p class="description"> Технокряк это современная площадка распространения коронавируса. Компании используют эту
                 платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
             </div>
@@ -62,7 +91,16 @@
         <li class="project-card">
             <a href="" class="link project-link">
                 <div class="card-overlay">
-            <img src="./images/imggoldenstar.jpg" alt="Постер New Orlean vs Golden Star">
+                    <picture>
+                        <source srcset="./images/desktop/imggoldenstar.jpg 1x, ./images/desktop/imggolden2x-min.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/tablet/imggolden1x.jpg 1x, ./images/tablet/imggolden2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/mobile/imggoldens1x-min.jpg 1x, ./images/mobile/imggoldenstar2x.jpg 2x"
+                            media="(min-width: 480px)" />
+                        <img src="./images/desktop/imggoldenstar.jpg"  alt= "Постер New Orlean vs Golden Star" height="294"> 
+                    </picture>
+            
             <p class="description"> Программирование состоит на 10% из строгой науки, на 20% из смекалки и вдохновения, и на 70% из попыток совместить
             первое со вторым.</p>
                 </div>
@@ -75,7 +113,16 @@
         <li class="project-card">
              <a href="" class="link project-link">
                 <div class="card-overlay">
-                 <img src="./images/imgseafood.jpg" alt="Ресторан Seafood">
+                    <picture>
+                        <source srcset="./images/desktop/imgseafood.jpg 1x, ./images/desktop/imgseafood2x-min.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/tablet/imgseafood1x-min.jpg 1x, ./images/tablet/imgseafood2x-min.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/mobile/imgseafood1x-min.jpg 1x, ./images/mobile/imgseafood2x.jpg 2x"
+                            media="(min-width: 480px)" />
+                        <img src="./images/desktop/imgseafood.jpg" alt="Ресторан Seafood" height="294">
+                    </picture>
+                
                 <p class="description"> Пока компьютеры не умеют мыслить самостоятельно, им можно доверять.</p>
                 </div>
              <div class="project-info">
@@ -87,7 +134,16 @@
         <li class="project-card">
             <a href="" class="link project-link">
                 <div class="card-overlay">
-                <img src="./images/imgprime.jpg" alt="Проект Prime">
+                    <picture>
+                        <source srcset="./images/desktop/imgprime.jpg 1x, ./images/desktop/imgprime2x-min.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/tablet/imgprime1x-min.jpg 1x, ./images/tablet/imgprime2x-min.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/mobile/imgprime1x-min.jpg 1x, ./images/mobile/imgprime2x.jpg 2x"
+                            media="(min-width: 480px)" />
+                        <img src="./images/desktop/imgprime.jpg" alt="Проект Prime" height="294">
+                    </picture>
+               
             <p class="description"> Самый страшный вирус современности – не программный код, он сидит за компьютером и называется пользователь.</p>
             </div>
             <div class="project-info">
@@ -99,7 +155,16 @@
         <li class="project-card">
             <a href=""class="link project-link">
                 <div class="card-overlay">
-                <img src="./images/imgboxes.jpg" alt="Проект Boxes">
+                    <picture>
+                        <source srcset="./images/desktop/imgboxes.jpg 1x, ./images/desktop/imgboxes2x-min.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/tablet/imgboxes1x.jpg 1x, ./images/tablet/imgboxes2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/mobile/imgboxes1x-min.jpg 1x, ./images/mobile/imgboxes2x.jpg 2x"
+                            media="(min-width: 480px)" />
+                        <img src="./images/desktop/imgboxes.jpg" alt="Проект Boxes" height="294">
+                    </picture>
+                
                 <p class="description"> Если в 9-00 вы видите программиста на рабочем месте, значит, он здесь ночевал.</p>
                 </div>
             <div class="project-info">
@@ -111,7 +176,15 @@
         <li class="project-card">
             <a href=""class="link project-link">
                 <div class="card-overlay">
-                    <img src="./images/imginspiratios.jpg" alt="Inspiration has no Borders">
+                    <picture>
+                        <source srcset="./images/desktop/imginspiratios.jpg 1x, ./images/desktop/imginsire2x-min.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/tablet/imginspir1x.jpg 1x, ./images/tablet/imginspir2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/mobile/imginspir1x-min.jpg 1x, ./images/mobile/imginspir2x.jpg 2x"
+                            media="(min-width: 480px)" />
+                        <img src="./images/desktop/imginspiratios.jpg" alt="Inspiration has no Borders" height="294">
+                    </picture>
+                    
                 <p class="description"> Не помещаются мысли в голове? Воспользуйтесь архиватором!</p>
                 </div>
             <div class="project-info">
@@ -123,7 +196,16 @@
         <li class="project-card">
              <a href="" class="link project-link">
                 <div class="card-overlay">
-                 <img src="./images/imglimedition.jpg" alt="Издание Limited Edition">
+                    <picture>
+                        <source srcset="./images/desktop/imglimedition.jpg 1x, ./images/desktop/imglimit2x-min.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/tablet/imglimit1x-min.jpg 1x, ./images/tablet/imglimit2x-min.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/mobile/imglimedition1x-min.jpg 1x, ./images/mobile/imglimedition2x.jpg 2x"
+                            media="(min-width: 480px)" />
+                        <img src="./images/desktop/imglimedition.jpg" alt="Издание Limited Edition" height="294">
+                    </picture>
+                
                 <p class="description"> Существует всего 2 способа писать код без багов. Но работает почему-то третий.</p>
                 </div>
              <div class="project-info">
@@ -135,7 +217,16 @@
         <li class="project-card">
             <a href=""class="link project-link">
                 <div class="card-overlay">
-                <img src="./images/imglab.jpg" alt="Проект LAB">
+                    <picture>
+                        <source srcset="./images/desktop/imglab.jpg 1x, ./images/desktop/imglab2x-min.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source srcset="./images/tablet/imglab1x.jpg 1x, ./images/tablet/imglab2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/mobile/imglab1x-min.jpg 1x, ./images/mobile/imglab2x.jpg 2x"
+                            media="(min-width: 480px)" />
+                        <img src="./images/desktop/imglab.jpg" alt="Проект LAB" height="294">
+                    </picture>
+  
             <p class="description"> Если никто не знает ответ на вопрос, пора начать читать документацию.</p>
             </div>
             <div class="project-info">
@@ -147,7 +238,13 @@
         <li class="project-card">
             <a href=""class="link project-link">
                 <div class="card-overlay">
-                <img src="./images/imggowbuss.jpg" alt="Growing Business">
+                    <picture>
+                        <source srcset="./images/desktop/imggowbuss.jpg 1x, ./images/desktop/imggrowing2x-min.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/tablet/imggrowbus2x.jpg 1x, ./images/tablet/imggrowbus2x.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/mobile/imgdowbuss1x-min.jpg 1x, ./images/mobile/imgdowbuss2x.jpg 2x" media="(min-width: 480px)" />
+                        <img src="./images/desktop/imggowbuss.jpg" alt="Growing Business" height="294">
+                    </picture>
+    
             <p class="description"> Если когда-нибудь будет создан язык программирования, благодаря которому можно будет кодить на разговорном английском,
             окажется, что большинство программистов не знают языка.</p>
             </div>
@@ -222,5 +319,6 @@
         </div>
     </div>
 </footer>
+<script src="./js/menu.js"></script>
 </body>
 </html>

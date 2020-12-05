@@ -22,7 +22,6 @@
 
 .hero-button {
   @extend %button;
-  position: relative;
 
   &:hover,
   &:focus {
@@ -37,6 +36,11 @@
   display: inline-flex;
   padding-left: 28px;
   margin-left: 12px;
+  margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 
   &:hover,
   &:focus {
@@ -65,7 +69,11 @@
   @extend %button;
   @extend .subscribe-btn;
   padding-left: 55px;
-  left: 25%;
+
   margin-top: 30px;
   margin-left: 0;
+
+  @media screen and (min-width: 480px) {
+    left: 25%;
+  }
 }

@@ -14,56 +14,81 @@
         <div class="container header-container">
             <nav class="main-nav">
                 <a href="./index.html" class="logo-header link"> <span class="logo-text-web">Web</span>Studio</a>
+                <button type="button" class="menu-button is-open" aria-expanded="false"  aria-controls="menu-container" data-menu-button> 
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-close" xlink:href="./images/spriteopt.svg#icon-close40px"></use>
+                        <use class="icon-menu"xlink:href="./images/spriteopt.svg#icon-menu40px"></use>
+                    </svg>
+                </button>
                 <ul class="list nav-box">
                     <li class="item"> <a href="./index.html" class="link nav-link current"> Студия </a> </li>
                     <li class="item"> <a href="./portfolio.html" class="link nav-link"> Портфолио</a> </li>
                     <li class="item"> <a href="#footer" class="link nav-link"> Контакты</a> </li>
                 </ul>
+                
             </nav>
             <ul class="list contacts-box">
                 <li class="item"> <a href="mailto:info@devstudio.com" class="link contacts-link">
-                    <svg class="contacts-icon" width="16" height="12">
+                    <svg class="contacts-icon email" >
                         <use xlink:href="./images/spriteopt.svg#icon-envelope"></use>
                     </svg>info@devstudio.com </a>
                 </li>
                 <li class="item"> <a href="tel:380961111111" class="link contacts-link"> 
-                    <svg class="contacts-icon" width="10" height="16">
+                    <svg class="contacts-icon tel" >
                     <use xlink:href="./images/spriteopt.svg#icon-Vectorphone"></use>
                 </svg> +38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
+    <div class="mobile-container is-open" data-menu>
+    <ul class="list mobile-menu">
+        <li class="item"> <a href="./index.html" class="link mobile-link current"> Студия </a> </li>
+        <li class="item"> <a href="./portfolio.html" class="link mobile-link"> Портфолио</a> </li>
+        <li class="item"> <a href="#footer" class="link mobile-link"> Контакты</a> </li>
+    </ul>
+       <ul class="list mobile-contact"> 
+        <li class="item"> <a href="mailto:info@devstudio.com" class="link mobile-link contact">
+                <svg class="contacts-icon email">
+                    <use xlink:href="./images/spriteopt.svg#icon-envelope"></use>
+                </svg>info@devstudio.com </a>
+        </li>
+        <li class="item"> <a href="tel:380961111111" class="link mobile-link contact">
+                <svg class="contacts-icon tel" >
+                    <use xlink:href="./images/spriteopt.svg#icon-Vectorphone"></use>
+                </svg> +38 096 111 11 11</a></li>
+    </ul>
+    </div>
     
  <main>
      <!-- section hero -->
     <section class="hero-section">
-        <div class="container hero-container">
+        <div class="hero-container">
         <h1 class="hero-title" >Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="hero-button" data-modal-open> Заказать услугу </button> 
         </div>
     </section>
     <!-- section about us -->
     
-    <section>
+    <section class="about-us-container">
         <div class="container">
             <h2 hidden> особенности нашей работы</h2>
             <ul class="list about-us">
-                <li class="item icon-space">
+                <li class="about-us-item icon-space">
                     <h3 class="title about-us-title">Внимание к деталям</h3>
                     <p class="about-us-info">Идейные соображения, а также начало повседневной работы по формированию
                         позиции.</p>
                 </li>
-                <li class="item icon-clock">
+                <li class="about-us-item icon-clock">
                     <h3 class="title about-us-title">Пунктуальность</h3>
                     <p class="about-us-info">Задача организации, в особенности же рамки и место обучения кадров влечет за
                         собой.</p>
                 </li>
-                <li class="item icon-diagram">
+                <li class="about-us-item icon-diagram">
                     <h3 class="title about-us-title">Планирование</h3>
                     <p class="about-us-info">Равным образом консультация с широким активом в значительной степени
                         обуславливает.</p>
                 </li>
-                <li class="item icon-astronaut">
+                <li class="about-us-item icon-astronaut">
                     <h3 class="title about-us-title">Современные технологии</h3>
                     <p class="about-us-info">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                     </p>
@@ -79,15 +104,15 @@
         <h2 class="title-middle">Чем мы занимаемся</h2>
     <ul class="list what-we-do">
         <li class="item">
-            <a href="">  <img src="./images/img.jpg" alt="1" height="294"></a>
+            <a href=""> <img srcset="./images/desktop/img.jpg 1x, ./images/desktop/img1pic2x-min.jpg 2x" src="./images/desktop/img.jpg" alt="1" height="294"></a>
             <p class="title what-we-do-title"> Десктопные приложения</p>
         </li>
         <li class="item">
-            <a href=""> <img src="./images/img2.jpg" alt="2" height="294"></a>
+            <a href=""> <img srcset="./images/desktop/img2.jpg 1x, ./images/desktop/img2pic2x-min.jpg 2x" src="./images/desktop/img2.jpg" alt="2" height="294"></a>
             <p class="title what-we-do-title">Мобильные приложения</p>
         </li>
         <li class="item">
-            <a href=""> <img src="./images/img3.jpg" alt="3" height="294"></a>
+            <a href=""> <img srcset="./images/desktop/img3.jpg 1x, ./images/desktop/img3pic2x-min.jpg 2x" src="./images/desktop/img3.jpg" alt="3" height="294"></a>
             <p class="title what-we-do-title">Дизайнерские решения</p>
         </li>
     </ul>
@@ -100,7 +125,13 @@
 <h2 class="title-middle">Наша команда</h2>
             <ul class="list team">
                 <li class="team-card">
-<a href=""><img src="./images/imgpm.jpg" alt="фото-игоря" height="260"></a>
+    <picture>
+    <source srcset="./images/desktop/imgpm.jpg 1x, ./images/desktop/imgpm2x-min.jpg 2x" media="(min-width: 1200px)"  />
+    <source srcset="./images/tablet/imgpd1x-min.jpg 1x, ./images/tablet/imgprime2x-min.jpg 2x" media="(min-width: 768px)" />
+    <source srcset="./images/mobile/imgpm1x-min.jpg 1x, ./images/mobile/imgpm2x.jpg 2x" media="(min-width: 480px)" />
+    <img src="./images/desktop/imgpm.jpg" alt="фото-игоря" height="260">
+    </picture>
+
 <div class="card-info">
 <h3 class="title name">Игорь Демьяненко</h3>
 <p lang="en" class="position"> Product Designer</p>
@@ -138,7 +169,13 @@
 </div>
                 </li>
                 <li class="team-card">
-                    <a href=""><img src="./images/imgfd.jpg" alt="фото-ольги" height="260"></a>
+                    <picture>
+                        <source srcset="./images/desktop/imgfd.jpg 1x, ./images/desktop/imgfd2x-min.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/tablet/imgfd1x.jpg 1x, ./images/tablet/imgfd2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source srcset="./images/mobile/imgfd1x-min.jpg 1x, ./images/mobile/imgfd2x.jpg 2x" media="(min-width: 480px)" />
+                        <img src="./images/desktop/imgfd.jpg" alt="фото-ольги" height="260">
+                    </picture>
                     <div class="card-info">
                     <h3 class="title name">Ольга Репина</h3>
                     <p lang="en" class="position"> Frontend Developer</p>
@@ -175,7 +212,13 @@
                 </div>
                 </li>
                 <li class="team-card">
-                    <a href=""><img src="./images/imgm.jpg" alt="фото-николая" height="260"></a>
+                    <picture>
+                        <source srcset="./images/desktop/imgm.jpg 1x, ./images/desktop/imggm2x-min.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/tablet/imgm1x-min.jpg 1x, ./images/tablet/imgm2x-min.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/mobile/imggm1x-min.jpg 1x, ./images/mobile/imggm2x.jpg 2x" media="(min-width: 480px)" />
+                        <img src="./images/desktop/imgm.jpg" alt="фото-николая" height="260">
+                    </picture>
+                    
                     <div class="card-info">
                     <h3 class="title name">Николай Тарасов</h3>
                     <p lang="en" class="position"> Marketing</p>
@@ -212,7 +255,13 @@
                     </div>
                 </li>
                 <li class="team-card">
-                    <a href=""><img src="./images/imgui.jpg" alt="фото-михаила" height="260"></a>
+                    <picture>
+                        <source srcset="./images/desktop/imgui.jpg 1x, ./images/desktop/imgui2x-min.jpg 2x" media="(min-width: 1200px)" />
+                        <source srcset="./images/tablet/imgui1x-min.jpg 1x, ./images/tablet/imgui2x-min.jpg 2x" media="(min-width: 768px)" />
+                        <source srcset="./images/mobile/imgui1x-min.jpg 1x, ./images/mobile/imgui2x.jpg 2x" media="(min-width: 480px)" />
+                        <img src="./images/desktop/imgui.jpg" alt="фото-михаила" height="260">
+                    </picture>
+                    
                     <div class="card-info">
                     <h3 class="title name">Михаил Ермаков</h3>
                     <p lang="en" class="position"> UI Designer</p>
@@ -251,7 +300,7 @@
             </ul>
         </div>
         </section>
-    <section>
+    <section class="clients-section">
         <div class="container">
         <h3 class="title-middle">Постоянные клиенты</h3>
         <ul class="list clients-box">
@@ -394,7 +443,7 @@
 
  </div>
 
-
+<script src="./js/menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 </html>
