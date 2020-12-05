@@ -14,21 +14,21 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../images/mobile/Header1x-min.jpg");
+    url("../images/mobile/Header1x-min.jpg");
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url("../../images/mobile/Header2x.jpg");
+    background-image: url("../images/mobile/Header2x.jpg");
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url("../../images/tablet/Headerhero1x.jpg");
+    background-image: url("../images/tablet/Headerhero1x.jpg");
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url("../../images/tablet/Headerhero2x.jpg");
+      background-image: url("../images/tablet/Headerhero2x.jpg");
     }
   }
 
@@ -37,12 +37,12 @@
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url("../../images/desktop/imghero.jpg");
+    background-image: url("../images/desktop/imghero.jpg");
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url("../../images/desktop/Imghero2x-min.jpg");
+      background-image: url("../images/desktop/Imghero2x-min.jpg");
     }
   }
 }
