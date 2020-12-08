@@ -7,7 +7,7 @@ $gradient: linear-gradient(
 
 .hero-section {
   height: 400px;
-  max-width: 480px;
+  width: 100%;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
@@ -25,7 +25,6 @@ $gradient: linear-gradient(
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
     background-image: $gradient, url("../images/tablet/Headerhero1x.jpg");
 
     @media screen and (min-device-pixel-ratio: 2),

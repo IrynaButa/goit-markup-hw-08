@@ -2,6 +2,7 @@
 .filter-box {
   display: flex;
   flex-wrap: wrap;
+
   margin-bottom: 40px;
 
   & .item:not(:last-child) {

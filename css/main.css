@@ -427,7 +427,7 @@ address {
 /* hero */
 .hero-section {
   height: 400px;
-  max-width: 480px;
+  width: 100%;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
@@ -447,7 +447,6 @@ address {
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/Headerhero1x.jpg");
   }
 }
